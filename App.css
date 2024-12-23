@@ -1,0 +1,405 @@
+/* Basic Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}
+
+header .logo img {
+  max-width: 40px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem; /* Scalable font size */
+}
+
+header nav ul li a:hover {
+  color: rgb(15, 15, 229);
+  transform: translateY(-7px);
+}
+
+section {
+  padding: 40px;
+}
+
+#home {
+  background-color: rgb(107, 13, 157);
+}
+
+#home #hero {
+  text-align: center;
+}
+
+#hero h1 {
+  font-size: 3.5rem;
+  margin: 0;
+  color: white;
+}
+
+#hero p {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.cta-buttons {
+  padding-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  padding: 20px;
+  align-items: center;
+  padding-left: 350px;
+  justify-content: center; 
+  justify-content: space-between;
+}
+
+.cta-buttons .btn1, .cta-buttons .btn2 {
+  background-color: rgb(57, 195, 195);
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 1.2rem;
+}
+
+.cta-buttons .btn1:hover, .cta-buttons .btn2:hover {
+  background-color: white;
+  color: black;
+  transform: translateY(-3px);
+}
+#Why-We h2 {
+  text-align: center;
+  color: black;
+  font-size: 35px;
+
+}
+
+.reasons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 40px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-color: white;
+}
+
+
+.reasons .reason1{
+  width: 80%;
+  background-color: black;
+  color: white;
+  border: 1px solid #ddd;
+  padding: 80px;
+  border-radius:8px ;
+  box-shadow: 0 px 8px white;
+  text-align: center;
+  font-size: 20px;
+}
+.reason1:hover{
+  transform: translateY(-5px);
+}
+
+.reasons .reason2{
+  width: 80%;
+  background-color: black;
+  color: white;
+  border: 1px solid #ddd;
+  padding: 80px;
+  border-radius:8px ;
+  box-shadow: 0 px 8px white;
+  text-align: center;
+  font-size: 20px;
+}
+.reason2:hover{
+  transform: translateY(-5px);
+}
+
+.reasons .reason3{
+  width: 80%;
+  background-color: black;
+  color: white;
+  border: 1px solid #ddd;
+  padding: 80px;
+  border-radius:8px ;
+  box-shadow: 0 px 8px white;
+  text-align: center;
+  font-size: 20px;
+}
+.reason3:hover{
+  transform: translateY(-5px);
+}
+.reason h3 p{
+  margin: 10px;
+  font-size: 20px;
+}
+
+/* About */
+.About-us {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#about-us {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+}
+
+
+#about-us .our-hero,
+#about-us .our-mission,
+#about-us .our-values {
+  width: 80%;
+    background-color: black;
+    color: white;
+    border: 1px solid #ddd;
+    padding: 80px;
+    border-radius:8px ;
+    box-shadow: 0 px 8px white;
+    text-align: center;
+    font-size: 10px;
+
+}
+
+#about-us .our-hero h2,
+#about-us .our-mission h2,
+#about-us .our-values h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+#about-us .our-hero p,
+#about-us .our-mission p,
+#about-us .our-values p
+{
+  font-size: 1rem;
+  
+}
+#about-us .our-hero:hover,
+#about-us .our-mission:hover,
+#about-us .our-values:hover {
+  transform: translateY(-7px);
+}
+/* TEAM  */
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 40px;
+
+  padding: 40px;
+  text-align: center;
+  border-color: white;
+}
+
+.team-member {
+  background-color: black;
+  color: white;
+  padding: 40px;
+  border-radius: 8px;
+  border-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 1.2rem;
+  border-color: white;
+}
+
+.team-member:hover {
+  transform: translateY(-7px);
+}
+
+.team-member h3 {
+  font-size: 2.3rem;
+  margin: 0;
+}
+
+.team-member p {
+  font-size: 1rem;
+}
+.HeadingTeam {
+  font-size: 2rem;
+  text-align: center;
+}
+.ParaTeam{
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+footer .social-icons a {
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+footer .social-icons i {
+  width: 40px;
+  height: 30px;
+}
+
+/* Responsive Design */
+
+/* For tablets and mobile devices */
+@media  (min-width:768px) and (max-width: 1024px) {
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul li {
+    margin-bottom: 15px;
+  }
+
+  .cta-buttons {
+    padding-left: 10px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .cta-buttons .btn1, .cta-buttons .btn2 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+
+  .reasons .reason1, .reasons .reason2, .reasons .reason3,
+  #about-us .our-hero, #about-us .our-mission, #about-us .our-values {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .team-member {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+/* For smaller mobile screens */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  header nav ul {
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    margin-bottom: 10px;
+  }
+
+  .cta-buttons {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cta-buttons .btn1, .cta-buttons .btn2 {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+
+  .reasons {
+    grid-template-columns: 1fr;
+  }
+
+  .team-members {
+    grid-template-columns: 1fr;
+  }
+
+  /* .team-member {
+    padding: 20px;
+  } */
+}
+
+/* For extra small mobile screens */
+@media (max-width: 480px) {
+  header nav ul li a {
+    font-size: 1rem;
+  }
+
+  .cta-buttons .btn1, .cta-buttons .btn2 {
+    font-size: 0.875rem;
+    padding: 8px 15px;
+  }
+
+  #home #hero h1 {
+    font-size: 2.5rem;
+  }
+
+  #home #hero p {
+    font-size: 1rem;
+  }
+
+  .team-member p {
+    font-size: 0.875rem;
+  }
+
+  footer {
+    font-size: 0.875rem;
+  }
+}
