@@ -304,21 +304,26 @@ footer .social-icons i {
 
 /* Responsive Design */
 
-/* For tablets and mobile devices */
-@media  (min-width:768px) and (max-width: 1024px) {
+/* Responsive Design */
+
+/* For tablets and small laptops (1024px and below) */
+@media (max-width: 1024px) {
+  /* Header Navigation */
   header nav ul {
     flex-direction: column;
     align-items: center;
+    padding: 0;
   }
 
   header nav ul li {
     margin-bottom: 15px;
   }
 
+  /* CTA Buttons */
   .cta-buttons {
-    padding-left: 10px;
-    justify-content: center;
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .cta-buttons .btn1, .cta-buttons .btn2 {
@@ -326,67 +331,90 @@ footer .social-icons i {
     margin-bottom: 10px;
   }
 
-  .reasons .reason1, .reasons .reason2, .reasons .reason3,
-  #about-us .our-hero, #about-us .our-mission, #about-us .our-values {
+  /* Home Section */
+  #home {
+    background-color: rgb(107, 13, 157);
+  }
+
+  #home #hero h1 {
+    font-size: 3rem;
+  }
+
+  #home #hero p {
+    font-size: 1.1rem;
+  }
+
+  /* Reasons Section */
+  .reasons {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .reasons .reason1, .reasons .reason2, .reasons .reason3 {
     width: 100%;
+    padding: 40px;
+    font-size: 18px;
+  }
+
+  /* About Section */
+  #about-us {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  #about-us .our-hero, #about-us .our-mission, #about-us .our-values {
+    padding: 40px;
+    font-size: 1rem;
+  }
+
+  /* Team Members */
+  .team-members {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     padding: 20px;
   }
 
   .team-member {
-    width: 100%;
-    padding: 20px;
+    padding: 30px;
+  }
+
+  .HeadingTeam, .ParaTeam {
+    font-size: 1.5rem;
+  }
+
+  /* Footer */
+  footer ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  footer .social-icons a {
+    margin: 0 8px;
+  }
+
+  footer .social-icons i {
+    width: 35px;
+    height: 25px;
   }
 }
 
-/* For smaller mobile screens */
+/* For small mobile screens (768px and below) */
 @media (max-width: 768px) {
+  /* Header */
   header {
     flex-direction: column;
     align-items: center;
-    text-align: center;
   }
 
   header nav ul {
     flex-direction: column;
+    margin-top: 20px;
   }
 
   header nav ul li {
     margin-bottom: 10px;
   }
 
-  .cta-buttons {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .cta-buttons .btn1, .cta-buttons .btn2 {
-    font-size: 1rem;
-    padding: 10px 15px;
-  }
-
-  .reasons {
-    grid-template-columns: 1fr;
-  }
-
-  .team-members {
-    grid-template-columns: 1fr;
-  }
-
-  /* .team-member {
-    padding: 20px;
-  } */
-}
-
-/* For extra small mobile screens */
-@media (max-width: 480px) {
-  header nav ul li a {
-    font-size: 1rem;
-  }
-
-  .cta-buttons .btn1, .cta-buttons .btn2 {
-    font-size: 0.875rem;
-    padding: 8px 15px;
-  }
-
+  /* Hero Section */
   #home #hero h1 {
     font-size: 2.5rem;
   }
@@ -395,11 +423,104 @@ footer .social-icons i {
     font-size: 1rem;
   }
 
-  .team-member p {
+  /* CTA Buttons */
+  .cta-buttons {
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .cta-buttons .btn1, .cta-buttons .btn2 {
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+
+  /* Reasons Section */
+  .reasons {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .reasons .reason1, .reasons .reason2, .reasons .reason3 {
+    padding: 30px;
+    font-size: 16px;
+  }
+
+  /* About Section */
+  #about-us {
+    grid-template-columns: 1fr;
+    padding-top: 40px;
+  }
+
+  #about-us .our-hero, #about-us .our-mission, #about-us .our-values {
+    padding: 40px;
+  }
+
+  /* Team Members */
+  .team-members {
+    grid-template-columns: 1fr;
+  }
+
+  .team-member {
+    padding: 20px;
+  }
+}
+
+/* For extra small mobile screens (480px and below) */
+@media (max-width: 480px) {
+  /* Header Navigation */
+  header nav ul li a {
+    font-size: 1rem;
+  }
+
+  /* Hero Section */
+  #home #hero h1 {
+    font-size: 2rem;
+  }
+
+  #home #hero p {
+    font-size: 0.9rem;
+  }
+
+  /* CTA Buttons */
+  .cta-buttons {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .cta-buttons .btn1, .cta-buttons .btn2 {
+    font-size: 0.875rem;
+    padding: 8px 12px;
+  }
+
+  /* Reasons Section */
+  .reasons .reason1, .reasons .reason2, .reasons .reason3 {
+    padding: 20px;
+    font-size: 14px;
+  }
+
+  /* About Section */
+  #about-us .our-hero, #about-us .our-mission, #about-us .our-values {
+    padding: 20px;
     font-size: 0.875rem;
   }
 
+  /* Team Members */
+  .team-member {
+    padding: 15px;
+  }
+
+  /* Footer */
   footer {
-    font-size: 0.875rem;
+    font-size: 0.75rem;
+  }
+
+  footer ul li {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  footer .social-icons a {
+    margin: 0 5px;
   }
 }
