@@ -2,14 +2,13 @@
 
 Features-
 Responsive design
-State management with React hooks
+State management with React 
 Seamless navigation with React Router
 API integration for dynamic content
 
 Technologies-
 ReactJS
 React Router
-Axios/Fetch (for API calls)
 CSS/SCSS
 
 Getting Started-
